@@ -4,13 +4,12 @@ import * as SplashScreen from 'expo-splash-screen';
 
 SplashScreen.preventAutoHideAsync();
 
-function App() {
+const App = () => {
   const [appIsReady, setAppIsReady] = useState(false);
 
   useEffect(() => {
     (async () => {
       try {
-        await new Promise((resolve) => setTimeout(resolve, 2000));
       } catch (e) {
         console.warn(e);
       } finally {
@@ -26,6 +25,6 @@ function App() {
   }, [appIsReady]);
 
   return appIsReady ? <View onLayout={onLayout} /> : null;
-}
+};
 
 export default memo(App);
