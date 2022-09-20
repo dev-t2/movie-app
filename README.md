@@ -14,3 +14,4 @@
   - [Icons](https://docs.expo.dev/guides/icons)
 - [React Navigation](https://reactnavigation.org)
   - [Getting started](https://reactnavigation.org/docs/getting-started)
+  - [Bottom Tabs Navigator](https://reactnavigation.org/docs/bottom-tab-navigator)
