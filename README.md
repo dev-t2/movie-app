@@ -16,3 +16,4 @@
   - [Getting started](https://reactnavigation.org/docs/getting-started)
   - [Themes](https://reactnavigation.org/docs/themes)
   - [Bottom Tabs Navigator](https://reactnavigation.org/docs/bottom-tab-navigator)
+  - [Stack Navigator](https://reactnavigation.org/docs/stack-navigator)
