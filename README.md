@@ -2,7 +2,6 @@
 
 - [React Native](https://reactnative.dev)
   - [Setting up the development environment](https://reactnative.dev/docs/environment-setup)
-  - [Adding TypeScript to an Existing Project](https://reactnative.dev/docs/typescript#adding-typescript-to-an-existing-project)
   - [React Native Template Typescript](https://github.com/react-native-community/react-native-template-typescript)
 - [Expo](https://expo.dev)
   - [Create React Native App](https://github.com/expo/create-react-native-app)
