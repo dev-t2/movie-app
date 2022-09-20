@@ -6,7 +6,7 @@ import { useFonts } from 'expo-font';
 import { Ionicons } from '@expo/vector-icons';
 import { DarkTheme, DefaultTheme, NavigationContainer } from '@react-navigation/native';
 
-import { BottomTabs } from './src/navigations';
+import { BottomTabs } from './src/navigators';
 
 const App = () => {
   const colorScheme = useColorScheme();
