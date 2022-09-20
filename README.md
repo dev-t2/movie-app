@@ -11,6 +11,7 @@
   - [Asset](https://docs.expo.dev/versions/latest/sdk/asset)
   - [Font](https://docs.expo.dev/versions/latest/sdk/font)
   - [Icons](https://docs.expo.dev/guides/icons)
+  - [Light and Dark modes](https://docs.expo.dev/guides/color-schemes)
 - [React Navigation](https://reactnavigation.org)
   - [Getting started](https://reactnavigation.org/docs/getting-started)
   - [Bottom Tabs Navigator](https://reactnavigation.org/docs/bottom-tab-navigator)
