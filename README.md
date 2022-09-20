@@ -4,6 +4,8 @@
   - [Setting up the development environment](https://reactnative.dev/docs/environment-setup)
 - [Create React Native App](https://github.com/expo/create-react-native-app)
   - [Using TypeScript](https://reactnative.dev/docs/typescript)
+- [ESLint](https://eslint.org)
+  - [Rules of Hooks](https://reactjs.org/docs/hooks-rules.html)
 - [Expo](https://expo.dev)
   - [Splash Screen](https://docs.expo.dev/versions/latest/sdk/splash-screen)
   - [Asset](https://docs.expo.dev/versions/latest/sdk/asset)

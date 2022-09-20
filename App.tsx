@@ -1,4 +1,4 @@
-import { memo, useCallback, useEffect, useMemo } from 'react';
+import React, { memo, useCallback, useEffect, useMemo } from 'react';
 import { View } from 'react-native';
 import { hideAsync, preventAutoHideAsync } from 'expo-splash-screen';
 import { useAssets } from 'expo-asset';
