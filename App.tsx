@@ -5,8 +5,14 @@ import { useAssets } from 'expo-asset';
 import { useFonts } from 'expo-font';
 import { Ionicons } from '@expo/vector-icons';
 import { DarkTheme, DefaultTheme, NavigationContainer } from '@react-navigation/native';
+import {
+  createNativeStackNavigator,
+  NativeStackNavigationOptions,
+} from '@react-navigation/native-stack';
 
-import { BottomTabs } from './src/navigators';
+import { BottomTabs, NativeStack } from './src/navigators';
+
+const { Navigator, Screen } = createNativeStackNavigator();
 
 const App = () => {
   const colorScheme = useColorScheme();
@@ -20,6 +26,10 @@ const App = () => {
   const isDarkMode = useMemo(() => colorScheme === 'dark', [colorScheme]);
 
   const theme = useMemo(() => (isDarkMode ? DarkTheme : DefaultTheme), [isDarkMode]);
+
+  const screenOptions = useMemo<NativeStackNavigationOptions>(() => {
+    return { headerShown: false };
+  }, []);
 
   useEffect(() => {
     (async () => {
@@ -35,7 +45,10 @@ const App = () => {
 
   return isReady ? (
     <NavigationContainer theme={theme} onReady={onReady}>
-      <BottomTabs />
+      <Navigator screenOptions={screenOptions}>
+        <Screen name="BottomTabs" component={BottomTabs} />
+        <Screen name="NativeStack" component={NativeStack} />
+      </Navigator>
     </NavigationContainer>
   ) : null;
 };
