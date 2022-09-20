@@ -6,10 +6,10 @@ import { useFonts } from 'expo-font';
 import { Ionicons } from '@expo/vector-icons';
 
 const App = () => {
-  const [assets] = useAssets([]);
-  const [fonts] = useFonts(Ionicons.font);
+  const [isAssets] = useAssets([]);
+  const [isFonts] = useFonts({ ...Ionicons.font });
 
-  const appIsReady = useMemo(() => assets && fonts, [assets, fonts]);
+  const isReady = useMemo(() => isAssets && isFonts, [isAssets, isFonts]);
 
   useEffect(() => {
     (async () => {
@@ -17,13 +17,13 @@ const App = () => {
     })();
   }, []);
 
-  const onLayoutRootView = useCallback(async () => {
-    if (appIsReady) {
+  const onLayout = useCallback(async () => {
+    if (isReady) {
       await hideAsync();
     }
-  }, [appIsReady]);
+  }, [isReady]);
 
-  return appIsReady ? <View onLayout={onLayoutRootView} /> : null;
+  return isReady ? <View onLayout={onLayout} /> : null;
 };
 
 export default memo(App);
