@@ -13,3 +13,4 @@
   - [Font](https://docs.expo.dev/versions/latest/sdk/font)
   - [Icons](https://docs.expo.dev/guides/icons)
 - [React Navigation](https://reactnavigation.org)
+  - [Getting started](https://reactnavigation.org/docs/getting-started)
