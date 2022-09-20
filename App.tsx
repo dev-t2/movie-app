@@ -1,29 +1,25 @@
-import { memo, useCallback, useEffect, useState } from 'react';
+import { memo, useCallback, useEffect, useMemo } from 'react';
 import { View } from 'react-native';
-import * as SplashScreen from 'expo-splash-screen';
-import * as Font from 'expo-font';
+import { hideAsync, preventAutoHideAsync } from 'expo-splash-screen';
+import { useAssets } from 'expo-asset';
+import { useFonts } from 'expo-font';
 import { Ionicons } from '@expo/vector-icons';
 
-SplashScreen.preventAutoHideAsync();
-
 const App = () => {
-  const [appIsReady, setAppIsReady] = useState(false);
+  const [assets] = useAssets([]);
+  const [fonts] = useFonts(Ionicons.font);
+
+  const appIsReady = useMemo(() => assets && fonts, [assets, fonts]);
 
   useEffect(() => {
     (async () => {
-      try {
-        await Font.loadAsync(Ionicons.font);
-      } catch (e) {
-        console.warn(e);
-      } finally {
-        setAppIsReady(true);
-      }
+      await preventAutoHideAsync();
     })();
   }, []);
 
   const onLayoutRootView = useCallback(async () => {
     if (appIsReady) {
-      await SplashScreen.hideAsync();
+      await hideAsync();
     }
   }, [appIsReady]);
 
