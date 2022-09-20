@@ -4,10 +4,8 @@ import { hideAsync, preventAutoHideAsync } from 'expo-splash-screen';
 import { useAssets } from 'expo-asset';
 import { useFonts } from 'expo-font';
 import { Ionicons } from '@expo/vector-icons';
-import { ThemeProvider } from '@emotion/react';
-import { NavigationContainer } from '@react-navigation/native';
+import { DarkTheme, DefaultTheme, NavigationContainer } from '@react-navigation/native';
 
-import { darkTheme, lightTheme } from './src/theme';
 import { BottomTabs } from './src/navigations';
 
 const App = () => {
@@ -15,7 +13,10 @@ const App = () => {
 
   const isDark = useMemo(() => colorScheme === 'dark', [colorScheme]);
 
+  const theme = useMemo(() => (isDark ? DarkTheme : DefaultTheme), [isDark]);
+
   const [isAssets] = useAssets([]);
+
   const [isFonts] = useFonts({ ...Ionicons.font });
 
   const isReady = useMemo(() => isAssets && isFonts, [isAssets, isFonts]);
@@ -33,11 +34,9 @@ const App = () => {
   }, [isReady]);
 
   return isReady ? (
-    <ThemeProvider theme={isDark ? darkTheme : lightTheme}>
-      <NavigationContainer onReady={onReady}>
-        <BottomTabs />
-      </NavigationContainer>
-    </ThemeProvider>
+    <NavigationContainer theme={theme} onReady={onReady}>
+      <BottomTabs />
+    </NavigationContainer>
   ) : null;
 };
 
