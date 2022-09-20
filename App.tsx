@@ -11,15 +11,15 @@ import { BottomTabs } from './src/navigations';
 const App = () => {
   const colorScheme = useColorScheme();
 
-  const isDark = useMemo(() => colorScheme === 'dark', [colorScheme]);
-
-  const theme = useMemo(() => (isDark ? DarkTheme : DefaultTheme), [isDark]);
-
   const [isAssets] = useAssets([]);
 
   const [isFonts] = useFonts({ ...Ionicons.font });
 
   const isReady = useMemo(() => isAssets && isFonts, [isAssets, isFonts]);
+
+  const isDarkMode = useMemo(() => colorScheme === 'dark', [colorScheme]);
+
+  const theme = useMemo(() => (isDarkMode ? DarkTheme : DefaultTheme), [isDarkMode]);
 
   useEffect(() => {
     (async () => {
