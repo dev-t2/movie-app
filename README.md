@@ -9,3 +9,4 @@
   - [Splash Screen](https://docs.expo.dev/versions/latest/sdk/splash-screen)
   - [Asset](https://docs.expo.dev/versions/latest/sdk/asset)
   - [Font](https://docs.expo.dev/versions/latest/sdk/font/)
+  - [Icons](https://docs.expo.dev/guides/icons)
