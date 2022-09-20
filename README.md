@@ -6,7 +6,6 @@
   - [Using TypeScript](https://reactnative.dev/docs/typescript)
 - [ESLint](https://eslint.org)
   - [Rules of Hooks](https://reactjs.org/docs/hooks-rules.html)
-- [Ignite](https://github.com/infinitered/ignite)
 - [Expo](https://expo.dev)
   - [Splash Screen](https://docs.expo.dev/versions/latest/sdk/splash-screen)
   - [Asset](https://docs.expo.dev/versions/latest/sdk/asset)
