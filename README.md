@@ -14,5 +14,5 @@
   - [Light and Dark modes](https://docs.expo.dev/guides/color-schemes)
 - [React Navigation](https://reactnavigation.org)
   - [Getting started](https://reactnavigation.org/docs/getting-started)
-  - [Bottom Tabs Navigator](https://reactnavigation.org/docs/bottom-tab-navigator)
   - [Themes](https://reactnavigation.org/docs/themes)
+  - [Bottom Tabs Navigator](https://reactnavigation.org/docs/bottom-tab-navigator)
