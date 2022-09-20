@@ -17,3 +17,4 @@
   - [Themes](https://reactnavigation.org/docs/themes)
   - [Bottom Tabs Navigator](https://reactnavigation.org/docs/bottom-tab-navigator)
   - [Native Stack Navigator](https://reactnavigation.org/docs/native-stack-navigator)
+  - [Navigation prop reference](https://reactnavigation.org/docs/navigation-prop)]
