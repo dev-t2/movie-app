@@ -7,7 +7,7 @@ const { Navigator, Screen } = createBottomTabNavigator();
 
 const BottomTabs = () => {
   return (
-    <Navigator>
+    <Navigator initialRouteName="Movie">
       <Screen name="Movie" component={Movie} />
       <Screen name="Tv" component={Tv} />
       <Screen name="Search" component={Search} />

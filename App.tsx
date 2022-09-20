@@ -5,7 +5,7 @@ import { useFonts } from 'expo-font';
 import { Ionicons } from '@expo/vector-icons';
 import { NavigationContainer } from '@react-navigation/native';
 
-import { BottomTabs } from './src/navigators';
+import { BottomTabs } from './src/navigations';
 
 const App = () => {
   const [isAssets] = useAssets([]);
