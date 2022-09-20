@@ -15,15 +15,15 @@ const BottomTabs = () => {
   const screenOptions = useMemo<BottomTabNavigationOptions>(() => {
     return {
       headerStyle: {
-        backgroundColor: theme.backgroundColor,
+        backgroundColor: theme.background,
       },
       headerTitleStyle: {
-        color: theme.color,
+        color: theme.text,
       },
       tabBarStyle: {
-        backgroundColor: theme.backgroundColor,
+        backgroundColor: theme.background,
       },
-      tabBarActiveTintColor: theme.primary,
+      tabBarActiveTintColor: theme.active,
       tabBarInactiveTintColor: theme.inactive,
     };
   }, [theme]);

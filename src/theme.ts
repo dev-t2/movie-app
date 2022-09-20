@@ -1,20 +1,20 @@
 export type ITheme = {
-  primary: string;
-  backgroundColor: string;
-  color: string;
+  background: string;
+  text: string;
+  active: string;
   inactive: string;
 };
 
 export const lightTheme: ITheme = {
-  primary: '#1976d2',
-  backgroundColor: '#fafafa',
-  color: '#000000',
+  background: '#fafafa',
+  text: '#000000',
+  active: '#1976d2',
   inactive: '#c7c7c7',
 };
 
 export const darkTheme: ITheme = {
-  primary: '#1976d2',
-  backgroundColor: '#212121',
-  color: '#ffffff',
+  background: '#212121',
+  text: '#ffffff',
+  active: '#1976d2',
   inactive: '#484848',
 };
