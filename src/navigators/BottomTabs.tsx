@@ -12,6 +12,7 @@ const { Navigator, Screen } = createBottomTabNavigator();
 const BottomTabs = () => {
   const screenOptions = useMemo<BottomTabNavigationOptions>(() => {
     return {
+      headerTitleAlign: 'center',
       tabBarLabelStyle: {
         fontWeight: '600',
         marginTop: -4,
