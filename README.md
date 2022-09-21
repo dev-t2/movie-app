@@ -10,6 +10,7 @@
   - [@emotion/native](https://emotion.sh/docs/@emotion/native)
   - [Define a Theme](https://emotion.sh/docs/typescript#define-a-theme)
 - [Expo](https://expo.dev)
+  - [Optimizing Updates](https://docs.expo.dev/archive/classic-updates/optimizing-updates)
   - [Installing expo-updates](https://docs.expo.dev/bare/installing-updates)
   - [Splash Screen](https://docs.expo.dev/versions/latest/sdk/splash-screen)
   - [Asset](https://docs.expo.dev/versions/latest/sdk/asset)

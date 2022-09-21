@@ -1,6 +1,7 @@
 {
   "name": "movie-app",
   "expo": {
+    "owner": "dev-t2",
     "name": "movie-app",
     "slug": "movie-app",
     "version": "1.0.0",
