@@ -18,4 +18,4 @@
   - [Bottom Tabs Navigator](https://reactnavigation.org/docs/bottom-tab-navigator)
   - [Native Stack Navigator](https://reactnavigation.org/docs/native-stack-navigator)
   - [Navigation prop reference](https://reactnavigation.org/docs/navigation-prop)
-  - [Nesting navigators](https://reactnavigation.org/docs/nesting-navigators)!!
+  - [Nesting navigators](https://reactnavigation.org/docs/nesting-navigators)
