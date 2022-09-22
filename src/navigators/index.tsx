@@ -8,14 +8,14 @@ import {
 import BottomTabs, { BottomTabsParamList } from './BottomTabs';
 import NativeStack, { NativeStackParamList } from './NativeStack';
 
-type RootNavigatorParamList = {
+type RootStackParamList = {
   BottomTabs: NavigatorScreenParams<BottomTabsParamList>;
   NativeStack: NavigatorScreenParams<NativeStackParamList>;
 };
 
-const { Navigator, Screen } = createNativeStackNavigator<RootNavigatorParamList>();
+const { Navigator, Screen } = createNativeStackNavigator<RootStackParamList>();
 
-const RootNavigator = () => {
+const RootStack = () => {
   const screenOptions = useMemo<NativeStackNavigationOptions>(() => {
     return { headerShown: false };
   }, []);
@@ -28,4 +28,4 @@ const RootNavigator = () => {
   );
 };
 
-export default memo(RootNavigator);
+export default memo(RootStack);

@@ -9,7 +9,7 @@ import { ThemeProvider } from '@emotion/react';
 import { NavigationContainer } from '@react-navigation/native';
 
 import { darkTheme, lightTheme } from './src/theme';
-import RootNavigator from './src/navigators';
+import RootStack from './src/navigators';
 
 const App = () => {
   const [isAssets] = useAssets([]);
@@ -41,7 +41,7 @@ const App = () => {
       <StatusBar style={style} />
 
       <NavigationContainer theme={theme} onReady={onReady}>
-        <RootNavigator />
+        <RootStack />
       </NavigationContainer>
     </ThemeProvider>
   ) : null;
