@@ -1,13 +1,19 @@
 import React, { memo, useMemo } from 'react';
+import { NavigatorScreenParams } from '@react-navigation/native';
 import {
   createNativeStackNavigator,
   NativeStackNavigationOptions,
 } from '@react-navigation/native-stack';
 
-import BottomTabs from './BottomTabs';
-import NativeStack from './NativeStack';
+import BottomTabs, { BottomTabsParamList } from './BottomTabs';
+import NativeStack, { NativeStackParamList } from './NativeStack';
 
-const { Navigator, Screen } = createNativeStackNavigator();
+type RootNavigatorParamList = {
+  BottomTabs: NavigatorScreenParams<BottomTabsParamList>;
+  NativeStack: NavigatorScreenParams<NativeStackParamList>;
+};
+
+const { Navigator, Screen } = createNativeStackNavigator<RootNavigatorParamList>();
 
 const RootNavigator = () => {
   const screenOptions = useMemo<NativeStackNavigationOptions>(() => {

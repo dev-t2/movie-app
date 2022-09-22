@@ -7,7 +7,13 @@ import { Ionicons } from '@expo/vector-icons';
 
 import { Movie, Search, Tv } from '../screens';
 
-const { Navigator, Screen } = createBottomTabNavigator();
+export type BottomTabsParamList = {
+  Movie: undefined;
+  Tv: undefined;
+  Search: undefined;
+};
+
+const { Navigator, Screen } = createBottomTabNavigator<BottomTabsParamList>();
 
 const BottomTabs = () => {
   const screenOptions = useMemo<BottomTabNavigationOptions>(() => {
