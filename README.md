@@ -7,7 +7,6 @@
 - [ESLint](https://eslint.org)
   - [Rules of Hooks](https://reactjs.org/docs/hooks-rules.html)
 - [Expo](https://expo.dev)
-  - [Optimizing Updates](https://docs.expo.dev/archive/classic-updates/optimizing-updates)
   - [Installing expo-updates](https://docs.expo.dev/bare/installing-updates)
   - [Splash Screen](https://docs.expo.dev/versions/latest/sdk/splash-screen)
   - [Asset](https://docs.expo.dev/versions/latest/sdk/asset)
