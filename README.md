@@ -19,7 +19,6 @@
   - [Nesting navigators](https://reactnavigation.org/docs/nesting-navigators)
   - [Themes](https://reactnavigation.org/docs/themes)
   - [Bottom Tabs Navigator](https://reactnavigation.org/docs/bottom-tab-navigator)
-  - [Navigation prop reference](https://reactnavigation.org/docs/navigation-prop)
 - [Emotion](https://emotion.sh/docs/introduction)
   - [@emotion/native](https://emotion.sh/docs/@emotion/native)
   - [Define a Theme](https://emotion.sh/docs/typescript#define-a-theme)
