@@ -9,11 +9,17 @@ export type CustomTheme = Theme & typeof theme;
 export const lightTheme: CustomTheme = {
   ...DefaultTheme,
   ...theme,
-  colors: { ...DefaultTheme.colors, ...theme.colors },
+  colors: {
+    ...DefaultTheme.colors,
+    ...theme.colors,
+  },
 };
 
 export const darkTheme: CustomTheme = {
   ...DarkTheme,
   ...theme,
-  colors: { ...DarkTheme.colors, ...theme.colors },
+  colors: {
+    ...DarkTheme.colors,
+    ...theme.colors,
+  },
 };
