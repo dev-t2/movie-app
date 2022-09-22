@@ -20,13 +20,9 @@ const App = () => {
 
   const isReady = useMemo(() => isAssets && isFonts, [isAssets, isFonts]);
 
-  const theme = useMemo(() => {
-    return colorScheme === 'dark' ? darkTheme : lightTheme;
-  }, [colorScheme]);
+  const theme = useMemo(() => (colorScheme === 'dark' ? darkTheme : lightTheme), [colorScheme]);
 
-  const style = useMemo<StatusBarStyle>(() => {
-    return colorScheme === 'dark' ? 'light' : 'dark';
-  }, [colorScheme]);
+  const style = useMemo<StatusBarStyle>(() => (theme.dark ? 'light' : 'dark'), [theme.dark]);
 
   useEffect(() => {
     (async () => {
