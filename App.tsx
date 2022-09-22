@@ -4,22 +4,21 @@ import { hideAsync, preventAutoHideAsync } from 'expo-splash-screen';
 import { useAssets } from 'expo-asset';
 import { useFonts } from 'expo-font';
 import { Ionicons } from '@expo/vector-icons';
-import { DarkTheme, DefaultTheme, NavigationContainer } from '@react-navigation/native';
+import { NavigationContainer } from '@react-navigation/native';
 
+import { darkTheme, lightTheme } from './src/theme';
 import RootNavigator from './src/navigators';
 
 const App = () => {
-  const colorScheme = useColorScheme();
-
   const [isAssets] = useAssets([]);
 
   const [isFonts] = useFonts({ ...Ionicons.font });
 
+  const colorScheme = useColorScheme();
+
   const isReady = useMemo(() => isAssets && isFonts, [isAssets, isFonts]);
 
-  const isDarkMode = useMemo(() => colorScheme === 'dark', [colorScheme]);
-
-  const theme = useMemo(() => (isDarkMode ? DarkTheme : DefaultTheme), [isDarkMode]);
+  const theme = useMemo(() => (colorScheme === 'dark' ? darkTheme : lightTheme), [colorScheme]);
 
   useEffect(() => {
     (async () => {
