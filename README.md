@@ -10,6 +10,7 @@
   - [Installing expo-updates](https://docs.expo.dev/bare/installing-updates)
   - [Light and Dark modes](https://docs.expo.dev/guides/color-schemes)
   - [Splash Screen](https://docs.expo.dev/versions/latest/sdk/splash-screen)
+    - [Create a Splash Screen](https://docs.expo.dev/guides/splash-screens)
   - [Asset](https://docs.expo.dev/versions/latest/sdk/asset)
   - [Font](https://docs.expo.dev/versions/latest/sdk/font)
   - [Icons](https://docs.expo.dev/guides/icons)
