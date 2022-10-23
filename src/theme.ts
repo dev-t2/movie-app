@@ -1,7 +1,7 @@
 import { DefaultTheme, DarkTheme, Theme } from '@react-navigation/native';
 
 const theme = {
-  colors: {},
+  colors: {} as Partial<Theme['colors']>,
   fonts: {},
 };
 
