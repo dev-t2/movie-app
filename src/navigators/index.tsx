@@ -5,10 +5,10 @@ import {
   NativeStackNavigationOptions,
 } from '@react-navigation/native-stack';
 
-import BottomTab, { BottomTabParamList } from './BottomTab';
+import BottomTabs, { BottomTabsParamList } from './BottomTabs';
 
 type RootNavigatorParamList = {
-  BottomTab: NavigatorScreenParams<BottomTabParamList>;
+  BottomTabs: NavigatorScreenParams<BottomTabsParamList>;
 };
 
 const { Navigator, Screen } = createNativeStackNavigator<RootNavigatorParamList>();
@@ -20,7 +20,7 @@ const RootNavigator = () => {
 
   return (
     <Navigator screenOptions={screenOptions}>
-      <Screen name="BottomTab" component={BottomTab} />
+      <Screen name="BottomTabs" component={BottomTabs} />
     </Navigator>
   );
 };

@@ -7,15 +7,15 @@ import { Ionicons } from '@expo/vector-icons';
 
 import { Movie, Search, Tv } from '../screens/tabs';
 
-export type BottomTabParamList = {
+export type BottomTabsParamList = {
   Movie: undefined;
   Tv: undefined;
   Search: undefined;
 };
 
-const { Navigator, Screen } = createBottomTabNavigator<BottomTabParamList>();
+const { Navigator, Screen } = createBottomTabNavigator<BottomTabsParamList>();
 
-const BottomTab = () => {
+const BottomTabs = () => {
   const screenOptions = useMemo<BottomTabNavigationOptions>(() => {
     return {
       tabBarStyle: { paddingTop: 4, paddingBottom: 4 },
@@ -59,4 +59,4 @@ const BottomTab = () => {
   );
 };
 
-export default memo(BottomTab);
+export default memo(BottomTabs);
