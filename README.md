@@ -20,3 +20,4 @@
   - [Type checking with TypeScript](https://reactnavigation.org/docs/typescript)
   - [Themes](https://reactnavigation.org/docs/themes)
   - [Native Stack Navigator](https://reactnavigation.org/docs/native-stack-navigator)
+  - [Navigation prop reference](https://reactnavigation.org/docs/navigation-prop)
