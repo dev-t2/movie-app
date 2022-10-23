@@ -21,3 +21,4 @@
   - [Themes](https://reactnavigation.org/docs/themes)
   - [Native Stack Navigator](https://reactnavigation.org/docs/native-stack-navigator)
   - [Navigation prop reference](https://reactnavigation.org/docs/navigation-prop)
+  - [Hiding tab bar in specific screens](https://reactnavigation.org/docs/hiding-tabbar-in-screens)
