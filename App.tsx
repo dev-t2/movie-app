@@ -1,38 +1,24 @@
-import React, { memo, useCallback, useEffect, useState } from 'react';
-import { Text, View } from 'react-native';
-import { hideAsync, preventAutoHideAsync } from 'expo-splash-screen';
-import { StatusBar } from 'expo-status-bar';
+import React, { memo, useMemo } from 'react';
+import { SafeAreaView, Text } from 'react-native';
+import { useAssets } from 'expo-asset';
+import { useFonts } from 'expo-font';
+import { Ionicons } from '@expo/vector-icons';
 
-preventAutoHideAsync();
+import { Splash } from './src/screens';
 
 const App = () => {
-  const [isReady, setIsReady] = useState(false);
+  const [isAssets] = useAssets([]);
+  const [isFonts] = useFonts({ ...Ionicons.font });
 
-  useEffect(() => {
-    (async () => {
-      try {
-        await new Promise((resolve: (value?: any) => void) => setTimeout(resolve, 2000));
-      } catch (e) {
-        console.warn(e);
-      } finally {
-        setIsReady(true);
-      }
-    })();
-  }, []);
-
-  const onLayout = useCallback(async () => {
-    if (isReady) {
-      await hideAsync();
-    }
-  }, [isReady]);
+  const isReady = useMemo(() => isAssets && isFonts, [isAssets, isFonts]);
 
   return isReady ? (
-    <View onLayout={onLayout}>
-      <StatusBar style="auto" />
-
+    <SafeAreaView>
       <Text>Open up App.js to start working on your app!</Text>
-    </View>
-  ) : null;
+    </SafeAreaView>
+  ) : (
+    <Splash />
+  );
 };
 
 export default memo(App);

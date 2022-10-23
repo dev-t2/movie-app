@@ -8,4 +8,6 @@
 - [ESLint](https://eslint.org)
   - [Rules of Hooks](https://reactjs.org/docs/hooks-rules.html)
 - [Expo](https://expo.dev)
-  - [SplashScreen](https://docs.expo.dev/versions/latest/sdk/splash-screen)
+  - [Asset](https://docs.expo.dev/versions/latest/sdk/asset)
+  - [Font](https://docs.expo.dev/versions/latest/sdk/font)
+  - [Icons](https://docs.expo.dev/guides/icons)
