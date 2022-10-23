@@ -7,7 +7,7 @@ import { Ionicons } from '@expo/vector-icons';
 
 import { Movie, Search, Tv } from '../screens/tabs';
 
-type BottomTabParamList = {
+export type BottomTabParamList = {
   Movie: undefined;
   Tv: undefined;
   Search: undefined;

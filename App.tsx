@@ -8,7 +8,7 @@ import { NavigationContainer } from '@react-navigation/native';
 
 import { darkTheme, lightTheme } from './src/theme';
 import { Splash } from './src/screens';
-import BottomTab from './src/navigators/BottomTab';
+import RootNavigator from './src/navigators';
 
 const App = () => {
   const colorScheme = useColorScheme();
@@ -23,7 +23,7 @@ const App = () => {
   ) : (
     <ThemeProvider theme={theme}>
       <NavigationContainer theme={theme}>
-        <BottomTab />
+        <RootNavigator />
       </NavigationContainer>
     </ThemeProvider>
   );
