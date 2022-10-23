@@ -7,3 +7,5 @@
   - [Introducing Create React Native App](https://reactnative.dev/blog/2017/03/13/introducing-create-react-native-app)
 - [ESLint](https://eslint.org)
   - [Rules of Hooks](https://reactjs.org/docs/hooks-rules.html)
+- [Expo](https://expo.dev)
+  - [SplashScreen](https://docs.expo.dev/versions/latest/sdk/splash-screen)
