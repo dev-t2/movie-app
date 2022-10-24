@@ -23,4 +23,5 @@
   - [Navigation prop reference](https://reactnavigation.org/docs/navigation-prop)
   - [Hiding tab bar in specific screens](https://reactnavigation.org/docs/hiding-tabbar-in-screens)
 - [TMDB](https://www.themoviedb.org)
+  - [API](https://developers.themoviedb.org/3/getting-started/introduction)
 - [react-native-web-swiper](https://github.com/reactrondev/react-native-web-swiper)
