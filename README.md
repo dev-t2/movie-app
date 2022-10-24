@@ -26,4 +26,4 @@
   - [Hiding tab bar in specific screens](https://reactnavigation.org/docs/hiding-tabbar-in-screens)
 - [TMDB](https://www.themoviedb.org)
   - [API](https://developers.themoviedb.org/3/getting-started/introduction)
-- [react-native-web-swiper](https://github.com/reactrondev/react-native-web-swiper)
+- [react-native-swiper](https://github.com/leecade/react-native-swiper)
