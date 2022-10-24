@@ -11,6 +11,7 @@
   - [Asset](https://docs.expo.dev/versions/latest/sdk/asset)
   - [Font](https://docs.expo.dev/versions/latest/sdk/font)
   - [Icons](https://docs.expo.dev/guides/icons)
+  - [BlurView](https://docs.expo.dev/versions/latest/sdk/blur-view)
 - [Emotion](https://emotion.sh/docs/introduction)
   - [@emotion/native](https://emotion.sh/docs/@emotion/native)
   - [Define a Theme](https://emotion.sh/docs/typescript#define-a-theme)
