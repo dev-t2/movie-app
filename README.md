@@ -11,6 +11,7 @@
   - [Asset](https://docs.expo.dev/versions/latest/sdk/asset)
   - [Font](https://docs.expo.dev/versions/latest/sdk/font)
   - [Icons](https://docs.expo.dev/guides/icons)
+  - [ActivityIndicator](https://docs.expo.dev/versions/latest/react-native/activityindicator)
   - [BlurView](https://docs.expo.dev/versions/latest/sdk/blur-view)
   - [StyleSheet](https://docs.expo.dev/versions/latest/react-native/stylesheet/)
 - [Emotion](https://emotion.sh/docs/introduction)
